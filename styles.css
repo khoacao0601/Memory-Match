@@ -1,0 +1,309 @@
+html
+    {
+        background-image: url("./images/background-final.jpg");
+        width: 100vw;
+        height: 45vw;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+header, aside, main, .details
+    {
+        border: 2px solid wheat;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 1%;
+    }
+
+header
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 10vh;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        color: rgb(226, 230, 154);
+        font-family: 'Bangers', cursive;
+    }
+
+aside
+    {
+        float: left; 
+        width: 18%;
+        height: 83%;
+        margin-bottom: 1%; 
+    }
+
+main    
+    {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+p
+    {
+        text-align: center;
+        font-size: 5vh;
+        font-weight: bold;
+        color: rgb(226, 230, 154);
+        font-family: 'Bangers', cursive;
+    }
+
+.p1,.p2
+    {
+        color: rgb(133, 69, 10);
+    }
+
+.modalBox p 
+    {
+        color: rgb(128, 77, 1);
+    }
+
+.details
+    {
+        background-image: url("./images/cutting\ borad.jpg");
+        height: 8vh;
+        width: 69%;
+        text-align: center;
+        font-size: 2vw;
+        margin-bottom: 5%;
+        font-family: 'Overpass', sans-serif;
+        font-weight: bold;
+
+        vertical-align: middle; /* For text in the center of div */
+        line-height: 9vh; /* For text in the center of div (the same as your div height) */
+    }
+
+.container
+    {
+        position: relative;
+        /* display: flex; */
+        height: 75vh;
+        width: 168vw;
+        margin-left: 3%;
+        padding-top: 1%;
+    }
+
+.card
+    {
+        /*background-color: black;*/
+        width: 15%;
+        height: 31%;
+        margin: 0.25% 0.25% 0.25% 0.25%;
+        display: inline-block;
+        position: relative;
+        background-size: cover;
+    }
+
+.back_card
+    {
+        background-image: url("./images/backcard.gif");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+        
+    }
+
+/**Front Card CSS**/
+
+.couple1_js,.couple2_html,.couple3_github,.couple4_mysql,.couple5_react,.couple6_php,.couple7_node,.couple8_css,.couple9_docker
+    {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+
+
+.couple1_js
+    {
+        background-image: url("./images/1carving-knife.jpg");    
+    }
+
+    
+
+.couple2_html
+    {
+        background-image: url("./images/2chicken-nuggets.jpg");    
+    }
+
+.couple3_github
+    {
+        background-image: url("./images/3cutting-board.jpg");
+    }
+
+.couple4_mysql
+    {
+        background-image: url("./images/4pasta-in-pot.jpg");
+    }
+
+
+.couple5_react
+    {
+        background-image: url("./images/5rice-bowl.png");
+    }
+
+.couple6_php
+    {
+        background-image: url("./images/6pan.jpg");
+    }
+
+.couple7_node
+    {
+        background-image: url("./images/7grill.jpg");
+    }
+
+.couple8_css
+    {
+        background-image: url("./images/8folk-spoon.jpg");
+    }
+
+.couple9_docker
+    {
+        background-image: url("./images/9stove-top.jpg");
+    }
+
+.hidden
+    {
+        display: none;
+    }
+
+/** Modal Box Css Ending Box**/
+.modalBox
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 37vw;
+        height: 20vw;
+        top: 15vw;
+        left: 36vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;    
+        font-family: 'Courgette', cursive;
+    }
+
+.modalBox::before
+    {
+        background-image: url("./images/modalBox\ win.gif");
+        opacity: 0.7;
+        width: 37vw;
+        height: 20vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+/** Modal Box Css Welcome Box**/
+
+.welcome
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 34vw;
+        height: 20vw;
+        top: 12vw;
+        left: 33vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 5vw;   
+        font-family: 'Courgette', cursive;
+        
+    }
+
+.welcome::before
+    {
+        background-image: url("./images/prepairToCook.gif");
+        opacity: 0.8;
+        width: 34vw;
+        height: 20vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+/**Button of Modal Boxes**/
+
+.submit
+    {
+        top: 33vh;
+        left: 35%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 1vw;
+    }
+
+.name
+    {
+        top: 23vh;
+        left: 35%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Parisienne', cursive;
+    }
+
+.close
+    {
+        top: 15vh;
+        left: 32%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 1vw;
+    }
+
+.opacityCard
+    {
+        opacity: 0.3;
+    }
+
+.modalBox > input   
+    {
+        top: 25vh;
+        left: 32%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 1vw;
+    }
+
+/******************************************************************************/
+
