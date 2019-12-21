@@ -19,7 +19,7 @@ header
     {
         text-align: center;
         font-weight: bold;
-        font-size: 10vh;
+        font-size: 4vw;
         padding-bottom: 1%;
         padding-top: 1%;
         color: rgb(226, 230, 154);
@@ -36,23 +36,30 @@ aside
 
 main    
     {
-        width: 80%;
+        width: 76vw;
+        height: 80vh;
         display: flex;
         justify-content: space-around;
     }
 
-p
+p, .pStats
     {
         text-align: center;
-        font-size: 5vh;
+        font-size: 5vw;
         font-weight: bold;
         color: rgb(226, 230, 154);
         font-family: 'Bangers', cursive;
     }
 
+.pStats {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .p1,.p2
     {
         color: rgb(133, 69, 10);
+        font-size: 50%;
     }
 
 .modalBox p 
@@ -209,8 +216,8 @@ p
         z-index: 1;
         width: 34vw;
         height: 20vw;
-        top: 12vw;
-        left: 33vw;
+        top: 30%;
+        left: 33%;
         overflow: auto;
         border: 2px solid black;
         border-radius: 50px;
@@ -237,8 +244,8 @@ p
 
 .submit
     {
-        top: 33vh;
-        left: 35%;
+        top: 78%;
+        left: 36%;
         position: absolute;
         width: 35%;
         height: 15%;
@@ -249,11 +256,12 @@ p
         vertical-align: middle;
         line-height: 1.5vw;
         font-size: 1vw;
+        margin-top: 2%;
     }
 
 .name
     {
-        top: 23vh;
+        top: 56%;
         left: 35%;
         position: absolute;
         width: 35%;
