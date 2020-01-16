@@ -34,14 +34,6 @@ aside
         margin-bottom: 1%; 
     }
 
-main    
-    {
-        width: 76vw;
-        height: 80vh;
-        display: flex;
-        justify-content: space-around;
-    }
-
 p, .pStats
     {
         text-align: center;
@@ -80,16 +72,6 @@ p, .pStats
 
         vertical-align: middle; /* For text in the center of div */
         line-height: 9vh; /* For text in the center of div (the same as your div height) */
-    }
-
-.container
-    {
-        position: relative;
-        /* display: flex; */
-        height: 75vh;
-        width: 168vw;
-        margin-left: 3%;
-        padding-top: 1%;
     }
 
 .card
@@ -315,3 +297,81 @@ p, .pStats
 
 /******************************************************************************/
 
+
+@media only screen and (max-width: 575px) {
+    .container
+    {
+        position: relative;
+        /* display: flex; */
+        height: 22vh;
+        width: 168vw;
+        margin-left: 3%;
+        padding-top: 1%;
+    }
+    main    
+    {
+        width: 75vw;
+        height: 27vh;
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+
+  @media only screen and (min-width: 576px){
+    .container
+    {
+        position: relative;
+        /* display: flex; */
+        height: 27vh;
+        width: 168vw;
+        margin-left: 3%;
+        padding-top: 1%;
+    }
+    main    
+    {
+        width: 76vw;
+        height: 34vh;
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .container
+    {
+        position: relative;
+        /* display: flex; */
+        height: 41vh;
+        width: 168vw;
+        margin-left: 3%;
+        padding-top: 1%;
+    }
+    main    
+    {
+        width: 76vw;
+        height: 45vh;
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+
+  @media only screen and (min-width: 1140px) {
+    .container
+    {
+        position: relative;
+        /* display: flex; */
+        height: 75vh;
+        width: 168vw;
+        margin-left: 3%;
+        padding-top: 1%;
+    }
+    main    
+    {
+        width: 76vw;
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+    }
+  } 
+
+  
