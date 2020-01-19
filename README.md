@@ -1,5 +1,5 @@
 
-# student-grade-table
+# Memory-Match
 A JavaScript memory match application.
 
 Desktop and Iphone Oriented
