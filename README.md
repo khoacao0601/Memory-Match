@@ -1,6 +1,6 @@
 
 # Memory-Match
-A JavaScript memory match application.
+Welcome to the a JavaScript memory match application.
 
 Desktop and Iphone Oriented
 
