@@ -17,7 +17,7 @@ Desktop and Iphone Oriented
 # Getting Started
 Clone the repository.
 
-`git clone https://github.com/khoacao0601/Memory-Match.git
-cd Memory-Match`
+`git clone https://github.com/khoacao0601/Memory-Match.git`
+`cd Memory-Match`
 
 
