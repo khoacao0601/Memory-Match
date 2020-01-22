@@ -42,8 +42,6 @@ function initializeApp(){
 function handleCardClick(event){
         if(clickable === true){ //set up to limit the clicks from player
 
-            console.log(event.currentTarget);
-
             $(event.currentTarget).addClass("hidden");
 
             if(firstCardClicked === null)
@@ -63,7 +61,6 @@ function handleCardClick(event){
         
                     if(front1 === front2) //win condition
                         {
-                            console.log("Card Match");
                             matches++;
 
                             opacityCard();
