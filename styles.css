@@ -74,16 +74,15 @@ p, .pStats
         line-height: 9vh; /* For text in the center of div (the same as your div height) */
     }
 
-.card
+/* .card
     {
-        /*background-color: black;*/
         width: 15%;
         height: 31%;
         margin: 0.25% 0.25% 0.25% 0.25%;
         display: inline-block;
         position: relative;
         background-size: cover;
-    }
+    } */
 
 .back_card
     {
@@ -314,6 +313,15 @@ p, .pStats
         height: 27vh;
         display: flex;
         justify-content: space-around;
+    }
+    .card
+    {
+        width: 16%;
+        height: 31%;
+        margin: 0.25% 0.25% 0.25% 0.25%;
+        display: inline-block;
+        position: relative;
+        background-size: cover;
     }
   }
 
