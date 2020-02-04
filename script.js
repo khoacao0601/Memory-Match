@@ -82,7 +82,7 @@ function handleCardClick(event){
                                 firstCardClicked = null;
                                 secondCardClicked = null;
 
-                        }, 500);
+                        }, 300);
 
                         clickable = false; //set up to limit the clicks from player
                         
@@ -94,7 +94,7 @@ function handleCardClick(event){
 
             setTimeout(function(){
                 clickable = true;
-            },1200); //let the player can click again   
+            },1500); //let the player can click again   
         }      
     }
 
