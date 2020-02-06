@@ -41,6 +41,7 @@ p, .pStats
         font-weight: bold;
         color: rgb(226, 230, 154);
         font-family: 'Bangers', cursive;
+        margin-top: 5%;
     }
 
 .pStats {
@@ -53,6 +54,15 @@ p, .pStats
         color: rgb(133, 69, 10);
         font-size: 50%;
     }
+
+.p1 {
+    margin-top: 25px;
+}
+
+.p2 {
+    margin-top: -24%;
+    margin-bottom: 0px;
+}
 
 .modalBox p 
     {
@@ -254,7 +264,7 @@ p, .pStats
 
 .close
     {
-        top: 57%;
+        top: 39%;
         left: 32%;
         position: absolute;
         width: 35%;
@@ -275,7 +285,7 @@ p, .pStats
 
 .modalBox > input   
     {
-        top: 77%;
+        top: 58%;
         left: 32%;
         position: absolute;
         width: 35%;
@@ -320,11 +330,24 @@ p, .pStats
     }
   }
 
-  @media only screen and (min-width: 576px){
+  @media only screen and (min-width: 576px) and (orientation : landscape) {
+    .p1,.p2
+    {
+        color: rgb(133, 69, 10);
+        font-size: 50%;
+    }
+
+    .p1 {
+        margin-top: 25px;
+    }
+
+    .p2 {
+        margin-top: -15px;
+        margin-bottom: 0px;
+    }
     .container
     {
         position: relative;
-        /* display: flex; */
         height: 27vh;
         width: 168vw;
         margin-left: 3%;
@@ -333,20 +356,21 @@ p, .pStats
     main    
     {
         width: 76vw;
-        height: 34vh;
+        height: 78vh;
         display: flex;
         justify-content: space-around;
     }
     .card
     {
         width: 16%;
-        height: 31%;
+        height: 79%;
         margin: 0.25% 0.25% 0.25% 0.25%;
         display: inline-block;
         position: relative;
         background-size: cover;
     }
-  }
+  } 
+
 
   @media only screen and (min-width: 768px) {
     .container
@@ -396,7 +420,7 @@ p, .pStats
     .card
     {
         width: 16%;
-        height: 31%;
+        height: 33%;
         margin: 0.25% 0.25% 0.25% 0.25%;
         display: inline-block;
         position: relative;
@@ -405,10 +429,23 @@ p, .pStats
   } 
 
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .p1,.p2
+    {
+        color: rgb(133, 69, 10);
+        font-size: 50%;
+    }
+
+    .p1 {
+        margin-top: 25px;
+    }
+
+    .p2 {
+        margin-top: -15px;
+        margin-bottom: 0px;
+    }
     .container
     {
         position: relative;
-        /* display: flex; */
         height: 75vh;
         width: 168vw;
         margin-left: 3%;
@@ -431,5 +468,100 @@ p, .pStats
         background-size: cover;
     }
 
+/* Ipad */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2)  {
+        container
+        {
+            position: relative;
+            height: 75vh;
+            width: 168vw;
+            margin-left: 3%;
+            padding-top: 1%;
+        }
+        main    
+        {
+            width: 76vw;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card
+        {
+            width: 16%;
+            height: 21%;
+            margin: 0.25% 0.25% 0.25% 0.25%;
+            display: inline-block;
+            position: relative;
+            background-size: cover;
+        }
+    }
+
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2) {
+        .card
+        {
+            width: 16%;
+            height: 12%;
+            margin: 0.25% 0.25% 0.25% 0.25%;
+            display: inline-block;
+            position: relative;
+            background-size: cover;
+        }
+    }
+
+    /* Ipad Pro */
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+        container
+        {
+            position: relative;
+            height: 75vh;
+            width: 168vw;
+            margin-left: 3%;
+            padding-top: 1%;
+        }
+        main    
+        {
+            width: 76vw;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card
+        {
+            width: 16%;
+            height: 12%;
+            margin: 0.25% 0.25% 0.25% 0.25%;
+            display: inline-block;
+            position: relative;
+            background-size: cover;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
+        container
+        {
+            position: relative;
+            height: 75vh;
+            width: 168vw;
+            margin-left: 3%;
+            padding-top: 1%;
+        }
+        main    
+        {
+            width: 76vw;
+            height: 80vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card
+        {
+            width: 16%;
+            height: 21%;
+            margin: 0.25% 0.25% 0.25% 0.25%;
+            display: inline-block;
+            position: relative;
+            background-size: cover;
+        }
+    }
+    
 }
   
