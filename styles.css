@@ -63,6 +63,9 @@ p, .pStats
     margin-top: -24%;
     margin-bottom: 0px;
 }
+.cooked {
+    font-size: 3vw;
+}
 
 .modalBox p 
     {
@@ -106,6 +109,7 @@ p, .pStats
         height: 100%;
         width: 100%;
         background-size: cover;
+        background-position: center;
     }
 
 
