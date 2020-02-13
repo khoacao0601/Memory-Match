@@ -95,11 +95,13 @@ p, .pStats
         width: 100%;
         background-size: cover;
         position: absolute;
-        
+        background-position: center;
     }
 
 .back_card:hover, .submit:hover, .close:hover, .clean:hover{
     cursor: pointer;
+    transition-duration: 200ms;
+    transform: scale(1.1);
 }
 
 /**Front Card CSS**/

@@ -1,3 +1,4 @@
+var backCard = $(".back_card");
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = null;
@@ -5,7 +6,6 @@ var attempts = null;
 var max_matches = 9;
 var games_played = null;
 var calculate = null;
-var clickable = true; //set up to limit the clicks from player
 var name = null;
 
 
@@ -32,7 +32,6 @@ $(document).ready(function(){
 
 
 function initializeApp(){
-        var backCard = $(".back_card");
         backCard.on("click", handleCardClick);
         shuffle();
     }
@@ -40,7 +39,6 @@ function initializeApp(){
 
 
 function handleCardClick(event){
-        if(clickable === true){ //set up to limit the clicks from player
 
             $(event.currentTarget).addClass("hidden");
 
@@ -51,6 +49,7 @@ function handleCardClick(event){
                 }
             else
                 {
+                    backCard.off();
                     secondCardClicked = $(event.currentTarget);
 
                     var front1 = firstCardClicked.next().css("background-image");
@@ -70,7 +69,7 @@ function handleCardClick(event){
                             clickable = false; //set up to limit the clicks from player
                             
                             displayStats();
-                            
+                            backCard.on("click", handleCardClick);
                         }
 
                     else{ // wrong condition
@@ -81,12 +80,12 @@ function handleCardClick(event){
                                 secondCardClicked.removeClass("hidden");
                                 firstCardClicked = null;
                                 secondCardClicked = null;
+                                displayStats();
+                                backCard.on("click", handleCardClick);
 
-                        }, 250);
+                        }, 700);
 
-                        clickable = false; //set up to limit the clicks from player
                         
-                        displayStats();
 
                         }
                     
@@ -95,7 +94,6 @@ function handleCardClick(event){
             setTimeout(function(){
                 clickable = true;
             },800); //let the player can click again   
-        }      
     }
 
 function shuffle()
