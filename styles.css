@@ -418,13 +418,96 @@ p, .pStats
         font-size: 3.5vw;
         font-weight: bolder;
     }
+
+    .welcome
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 70vw;
+        height: 40vw;
+        top: 30%;
+        left: 23%;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 5vw;   
+        font-family: 'Courgette', cursive;
+        
+    }
+
+    .welcome::before
+    {
+        background-image: url("./images/prepairToCook.gif");
+        opacity: 0.8;
+        width: 70vw;
+        height: 40vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .p1 {
+        margin-top: 22px;
+    }
+
+    .p2 {
+        margin-top: -20px;
+        margin-bottom: 0px;
+    }
+
+    .p1, .p2 {
+        color: rgb(133, 69, 10);
+        font-size: 125%;
+        text-shadow: -1.5px -1.5px 0 yellow, 1.5px -1.5px 0 yellow, -1.5px 1.5px 0 yellow, 1.5px 1.5px 0 yellow;
+    }
+
+    .name {
+        top: 56%;
+        left: 25%;
+        position: absolute;
+        width: 55%;
+        height: 18%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Parisienne', cursive;
+    }
+
+    .submit {
+        top: 78%;
+        left: 36%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 5vw;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+
     .cooked {
         font-size: 5.5vw;
         text-shadow: -1px -2.5px 0 yellow, 1px -2.5px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
     }
   }
 
-  @media only screen and (min-width: 576px) and (orientation : landscape) {
+  @media only screen 
+  and (min-device-width : 414px) 
+  and (max-device-width : 736px) 
+  and (orientation : landscape) { 
     header
     {
         text-align: center;
@@ -543,6 +626,85 @@ p, .pStats
         font-size: 3.5vw;
         font-weight: bolder;
     }
+
+    .welcome
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 70vw;
+        height: 33vw;
+        top: 25%;
+        left: 23%;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 5vw;   
+        font-family: 'Courgette', cursive;
+        
+    }
+
+    .welcome::before
+    {
+        background-image: url("./images/prepairToCook.gif");
+        opacity: 0.8;
+        width: 70vw;
+        height: 40vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .p1 {
+        margin-top: 22px;
+    }
+
+    .p2 {
+        margin-top: -40px;
+        margin-bottom: 0px;
+    }
+
+    .p1, .p2 {
+        color: rgb(133, 69, 10);
+        font-size: 125%;
+        text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 yellow, 2px 2px 0 yellow;
+    }
+
+    .name {
+        top: 56%;
+        left: 25%;
+        position: absolute;
+        width: 55%;
+        height: 18%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Parisienne', cursive;
+    }
+
+    .submit {
+        top: 78%;
+        left: 36%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 5vw;
+        margin-top: 2%;
+        font-weight: bold;
+    }
     .cooked {
         font-size: 4vw;
         text-shadow: -2.5px -2.5px 0 yellow, 2.5px -2.5px 0 yellow, -2.5px 2.5px 0 yellow, 2.5px 2.5px 0 yellow;
@@ -550,7 +712,10 @@ p, .pStats
   } 
 
 
-  @media only screen and (min-width: 768px) {
+  @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
     header
     {
         text-align: center;
@@ -559,7 +724,7 @@ p, .pStats
         padding-bottom: 1%;
         padding-top: 1%;
         color: yellow;
-        text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue, 2px 2px 0 blue;
+        text-shadow: -3px -3px 0 blue, 3px -3px 0 blue, -3px 3px 0 blue, 3px 3px 0 blue;
         font-family: 'Bangers', cursive;
     }
 
@@ -658,6 +823,84 @@ p, .pStats
         font-weight: bolder;
     }
 
+    .welcome
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 70vw;
+        height: 40vw;
+        top: 30%;
+        left: 23%;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 5vw;   
+        font-family: 'Courgette', cursive;
+        
+    }
+
+    .welcome::before
+    {
+        background-image: url("./images/prepairToCook.gif");
+        opacity: 0.8;
+        width: 70vw;
+        height: 40vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .p1 {
+        margin-top: 22px;
+    }
+
+    .p2 {
+        margin-top: -20px;
+        margin-bottom: 0px;
+    }
+
+    .p1, .p2 {
+        color: rgb(133, 69, 10);
+        font-size: 125%;
+        text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 yellow, 2px 2px 0 yellow;
+    }
+
+    .name {
+        top: 56%;
+        left: 25%;
+        position: absolute;
+        width: 55%;
+        height: 18%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Parisienne', cursive;
+    }
+
+    .submit {
+        top: 78%;
+        left: 36%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 5vw;
+        margin-top: 2%;
+        font-weight: bold;
+    }
 
     .cooked {
         font-size: 4.5vw;
@@ -665,59 +908,7 @@ p, .pStats
     }
   }
 
-  @media only screen and (min-width: 1140px) {
-    header
-    {
-        text-align: center;
-        font-weight: bold;
-        font-size: 4vw;
-        padding-bottom: 1%;
-        padding-top: 1%;
-        color: yellow;
-        text-shadow: -1px -1px 0 blue, 1px -1px 0 blue, -1px 1px 0 blue, 1px 1px 0 blue;
-        font-family: 'Bangers', cursive;
-    }
-
-    .container
-    {
-        position: relative;
-        /* display: flex; */
-        height: 75vh;
-        width: 168vw;
-        margin-left: 3%;
-        padding-top: 1%;
-    }
-    main    
-    {
-        width: 76vw;
-        height: 80vh;
-        display: flex;
-        justify-content: space-around;
-    }
-    .card
-    {
-        width: 16%;
-        height: 33%;
-        margin: 0.25% 0.25% 0.25% 0.25%;
-        display: inline-block;
-        position: relative;
-        background-size: cover;
-    }
-    .modalBox {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        width: 30vw;
-        height: 25vw;
-        top: 35%;
-        left: 36vw;
-        overflow: auto;
-        border: 2px solid black;
-        border-radius: 50px;
-        font-size: 10vw;
-        font-family: 'Courgette', cursive;
-    }
-  } 
+ 
 
   @media only screen and (max-width: 1024) {
     .p1,.p2
@@ -761,7 +952,10 @@ p, .pStats
 
 }
     
-@media only screen and (min-width: 812px)  {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)  {
     header
     {
         text-align: center;
@@ -770,7 +964,7 @@ p, .pStats
         padding-bottom: 1%;
         padding-top: 1%;
         color: yellow;
-        text-shadow: -1.5px -1.5px 0 blue, 1.5px -1.5px 0 blue, -1.5px 1.5px 0 blue, 1.5px 1.5px 0 blue;
+        text-shadow: -3px -3px 0 blue, 3px -3px 0 blue, -3px 3px 0 blue, 3px 3px 0 blue;
         font-family: 'Bangers', cursive;
     }
 
@@ -799,8 +993,578 @@ p, .pStats
         position: relative;
         background-size: cover;
     }
+
+    .modalBox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 45vw;
+        height: 20vw;
+        top: 25%;
+        left: 30vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;
+        font-family: 'Courgette', cursive;
+    }
+
+    .modalBox::before {
+        background-image: url(./images/modalBox\ win.gif);
+        opacity: 0.7;
+        width: 45vw;
+        height: 20vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .close
+    {
+        top: 39%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .modalBox > input   
+    {
+        top: 68%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .welcome
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 70vw;
+        height: 33vw;
+        top: 25%;
+        left: 23%;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 5vw;   
+        font-family: 'Courgette', cursive;
+        
+    }
+
+    .welcome::before
+    {
+        background-image: url("./images/prepairToCook.gif");
+        opacity: 0.8;
+        width: 70vw;
+        height: 33vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .p1 {
+        margin-top: 22px;
+    }
+
+    .p2 {
+        margin-top: -40px;
+        margin-bottom: 0px;
+    }
+
+    .p1, .p2 {
+        color: rgb(133, 69, 10);
+        font-size: 125%;
+        text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 yellow, 2px 2px 0 yellow;
+    }
+
+    .name {
+        top: 56%;
+        left: 25%;
+        position: absolute;
+        width: 55%;
+        height: 18%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Parisienne', cursive;
+    }
+
+    .submit {
+        top: 78%;
+        left: 36%;
+        position: absolute;
+        width: 35%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 5vw;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+
+    .cooked {
+        font-size: 4vw;
+        text-shadow: -2.5px -2.5px 0 yellow, 2.5px -2.5px 0 yellow, -2.5px 2.5px 0 yellow, 2.5px 2.5px 0 yellow;
+    }
   } 
 
-}
 
+
+
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    header
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 4vw;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        color: yellow;
+        text-shadow: -5px -5px 0 blue, 5px -5px 0 blue, -5px 5px 0 blue, 5px 5px 0 blue;
+        font-family: 'Bangers', cursive;
+    }
+
+    .pStats {
+        color: yellow;
+        text-shadow: 2px 4px blue;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .p1,.p2
+    {
+        color: rgb(133, 69, 10);
+        font-size: 50%;
+    }
+
+    .p1 {
+        margin-top: 25px;
+    }
+
+    .p2 {
+        margin-top: -15px;
+        margin-bottom: 0px;
+    }
+    .container
+    {
+        position: relative;
+        height: 27vh;
+        width: 168vw;
+        margin-left: 3%;
+        padding-top: 1%;
+    }
+    main    
+    {
+        width: 76vw;
+        height: 78vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .card
+    {
+        width: 16%;
+        height: 79%;
+        margin: 0.25% 0.25% 0.25% 0.25%;
+        display: inline-block;
+        position: relative;
+        background-size: cover;
+    }
+    .modalBox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 45vw;
+        height: 20vw;
+        top: 25%;
+        left: 30vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;
+        font-family: 'Courgette', cursive;
+    }
+
+    .modalBox::before {
+        background-image: url(./images/modalBox\ win.gif);
+        opacity: 0.7;
+        width: 45vw;
+        height: 20vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .close
+    {
+        top: 39%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .modalBox > input   
+    {
+        top: 68%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .welcome
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 50vw;
+        height: 25vw;
+        top: 29%;
+        left: 30%;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 5vw;   
+        font-family: 'Courgette', cursive;
+        
+    }
+
+    .welcome::before
+    {
+        background-image: url("./images/prepairToCook.gif");
+        opacity: 0.8;
+        width: 50vw;
+        height: 25vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .p1 {
+        margin-top: 22px;
+    }
+
+    .p2 {
+        margin-top: -55px;
+        margin-bottom: 0px;
+    }
+
+    .p1, .p2 {
+        color: rgb(133, 69, 10);
+        font-size: 80%;
+        text-shadow: -3px -3px 0 yellow, 3px -3px 0 yellow, -3px 3px 0 yellow, 3px 3px 0 yellow;
+    }
+
+    .name {
+        top: 56%;
+        left: 25%;
+        position: absolute;
+        width: 55%;
+        height: 10%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Parisienne', cursive;
+    }
+
+    .submit {
+        top: 78%;
+        left: 40%;
+        position: absolute;
+        width: 25%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 4vw;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+
+
+    .cooked {
+        font-size: 4vw;
+        text-shadow: -2.5px -2.5px 0 yellow, 2.5px -2.5px 0 yellow, -2.5px 2.5px 0 yellow, 2.5px 2.5px 0 yellow;
+    }
+    
+  }
   
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    header
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 4vw;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        color: yellow;
+        text-shadow: -5px -5px 0 blue, 5px -5px 0 blue, -5px 5px 0 blue, 5px 5px 0 blue;
+        font-family: 'Bangers', cursive;
+    }
+
+    .pStats {
+        color: yellow;
+        text-shadow: 2px 4px blue;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .p1,.p2
+    {
+        color: rgb(133, 69, 10);
+        font-size: 50%;
+    }
+
+    .p1 {
+        margin-top: 25px;
+    }
+
+    .p2 {
+        margin-top: -15px;
+        margin-bottom: 0px;
+    }
+    .container
+    {
+        position: relative;
+        height: 27vh;
+        width: 168vw;
+        margin-left: 3%;
+        padding-top: 1%;
+    }
+    main    
+    {
+        width: 76vw;
+        height: 78vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .card
+    {
+        width: 16%;
+        height: 79%;
+        margin: 0.25% 0.25% 0.25% 0.25%;
+        display: inline-block;
+        position: relative;
+        background-size: cover;
+    }
+    .modalBox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 45vw;
+        height: 20vw;
+        top: 25%;
+        left: 30vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;
+        font-family: 'Courgette', cursive;
+    }
+
+    .modalBox::before {
+        background-image: url(./images/modalBox\ win.gif);
+        opacity: 0.7;
+        width: 45vw;
+        height: 20vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .close
+    {
+        top: 39%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .modalBox > input   
+    {
+        top: 68%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .welcome
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 50vw;
+        height: 25vw;
+        top: 29%;
+        left: 30%;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 5vw;   
+        font-family: 'Courgette', cursive;
+        
+    }
+
+    .welcome::before
+    {
+        background-image: url("./images/prepairToCook.gif");
+        opacity: 0.8;
+        width: 50vw;
+        height: 25vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .p1 {
+        margin-top: 22px;
+    }
+
+    .p2 {
+        margin-top: -55px;
+        margin-bottom: 0px;
+    }
+
+    .p1, .p2 {
+        color: rgb(133, 69, 10);
+        font-size: 80%;
+        text-shadow: -3px -3px 0 yellow, 3px -3px 0 yellow, -3px 3px 0 yellow, 3px 3px 0 yellow;
+    }
+
+    .name {
+        top: 56%;
+        left: 25%;
+        position: absolute;
+        width: 55%;
+        height: 10%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-family: 'Parisienne', cursive;
+    }
+
+    .submit {
+        top: 78%;
+        left: 40%;
+        position: absolute;
+        width: 25%;
+        height: 15%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 4vw;
+        margin-top: 2%;
+        font-weight: bold;
+    }
+
+
+    .cooked {
+        font-size: 4vw;
+        text-shadow: -2.5px -2.5px 0 yellow, 2.5px -2.5px 0 yellow, -2.5px 2.5px 0 yellow, 2.5px 2.5px 0 yellow;
+    }
+    
+  }
