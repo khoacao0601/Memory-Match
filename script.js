@@ -18,9 +18,15 @@ function welcomeBox() //Modal Box for Welcome Box
 
         submit.click(function(){
             name = $(".name").val(); //get text value from input
-            $("header").text(name + "'s Memory Kitchen");
-            $("main").removeClass("hidden");
-            welcome.hide();
+            if(name === "") {
+                $("header").text("Memory Kitchen");
+                $("main").removeClass("hidden");
+                welcome.hide();
+            } else {
+                $("header").text(name + "'s Memory Kitchen");
+                $("main").removeClass("hidden");
+                welcome.hide();
+            }
         });
     }
 
