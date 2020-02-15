@@ -357,6 +357,71 @@ p, .pStats
         position: relative;
         background-size: cover;
     }
+    .modalBox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 65vw;
+        height: 35vw;
+        top: 35%;
+        left: 26vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;
+        font-family: 'Courgette', cursive;
+    }
+
+    .modalBox::before {
+        background-image: url(./images/modalBox\ win.gif);
+        opacity: 0.7;
+        width: 65vw;
+        height: 35vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .close
+    {
+        top: 39%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 25%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .modalBox > input   
+    {
+        top: 68%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 25%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+    .cooked {
+        font-size: 5.5vw;
+        text-shadow: -1px -2.5px 0 yellow, 1px -2.5px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
+    }
   }
 
   @media only screen and (min-width: 576px) and (orientation : landscape) {
@@ -417,6 +482,71 @@ p, .pStats
         position: relative;
         background-size: cover;
     }
+    .modalBox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 45vw;
+        height: 30vw;
+        top: 35%;
+        left: 30vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;
+        font-family: 'Courgette', cursive;
+    }
+
+    .modalBox::before {
+        background-image: url(./images/modalBox\ win.gif);
+        opacity: 0.7;
+        width: 65vw;
+        height: 35vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .close
+    {
+        top: 39%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+    .modalBox > input   
+    {
+        top: 68%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+    .cooked {
+        font-size: 4vw;
+        text-shadow: -2.5px -2.5px 0 yellow, 2.5px -2.5px 0 yellow, -2.5px 2.5px 0 yellow, 2.5px 2.5px 0 yellow;
+    }
   } 
 
 
@@ -465,6 +595,74 @@ p, .pStats
         position: relative;
         background-size: cover;
     }
+
+    .modalBox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 50vw;
+        height: 25vw;
+        top: 30%;
+        left: 30vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;
+        font-family: 'Courgette', cursive;
+    }
+
+    .modalBox::before {
+        background-image: url(./images/modalBox\ win.gif);
+        opacity: 0.7;
+        width: 65vw;
+        height: 35vw;
+        z-index: -1;
+        content: " ";
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .close
+    {
+        top: 39%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+
+    .modalBox > input   
+    {
+        top: 62%;
+        left: 18%;
+        position: absolute;
+        width: 70%;
+        height: 20%;
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1.5vw;
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+
+
+    .cooked {
+        font-size: 4.5vw;
+        text-shadow: -2.5px -2.5px 0 yellow, 2.5px -2.5px 0 yellow, -2.5px 2.5px 0 yellow, 2.5px 2.5px 0 yellow;
+    }
   }
 
   @media only screen and (min-width: 1140px) {
@@ -504,6 +702,20 @@ p, .pStats
         display: inline-block;
         position: relative;
         background-size: cover;
+    }
+    .modalBox {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 30vw;
+        height: 25vw;
+        top: 35%;
+        left: 36vw;
+        overflow: auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        font-size: 10vw;
+        font-family: 'Courgette', cursive;
     }
   } 
 
