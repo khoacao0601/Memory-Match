@@ -22,7 +22,8 @@ header
         font-size: 4vw;
         padding-bottom: 1%;
         padding-top: 1%;
-        color: rgb(226, 230, 154);
+        color: yellow;
+        text-shadow: -5px -5px 0 blue, 5px -5px 0 blue, -5px 5px 0 blue, 5px 5px 0 blue;
         font-family: 'Bangers', cursive;
     }
 
@@ -45,6 +46,8 @@ p, .pStats
     }
 
 .pStats {
+    color: yellow;
+    text-shadow: 4px 8px blue;
     margin-top: 10%;
     margin-bottom: 10%;
 }
