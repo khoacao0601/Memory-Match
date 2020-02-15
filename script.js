@@ -144,7 +144,11 @@ function winModalBox()
         {
             games_played++;
             $(".game_played").text(games_played);
-            $(".modalBox").find("p").text(name + "! You cooked it!");
+            if(name === "") {
+                $(".modalBox").find("p").text("You cooked it!");
+            } else {
+                $(".modalBox").find("p").text(name + "! You cooked it!");
+            }
             modal.show();
         
             span.click(function(){
