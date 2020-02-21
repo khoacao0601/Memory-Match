@@ -313,6 +313,33 @@ p, .pStats
 
 
 @media only screen and (max-width: 575px) {
+    aside
+    {
+        float: left; 
+        width: 100%;
+        height: 12vh;
+        margin-bottom: 1%; 
+    }
+
+    .details
+    {
+        position: relative;
+        top: -5vh;
+        left: 8vw;
+        background-image: url("./images/cutting\ borad.jpg");
+        display: inline-block;
+        height: 5vh;
+        width: 12vw;
+        text-align: center;
+        font-size: 2.5vw;
+        margin-bottom: 10%;
+        font-family: 'Overpass', sans-serif;
+        font-weight: bold;
+
+        vertical-align: middle; /* For text in the center of div */
+        line-height: 3vh; /* For text in the center of div (the same as your div height) */
+    }
+
     header
     {
         text-align: center;
@@ -328,8 +355,8 @@ p, .pStats
     .pStats {
         color: yellow;
         text-shadow: 2px 4px blue;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 2%;
+        margin-bottom: 12%;
     }
 
     .container
@@ -343,7 +370,7 @@ p, .pStats
     }
     main    
     {
-        width: 75vw;
+        width: 96vw;
         height: 27vh;
         display: flex;
         justify-content: space-around;
@@ -351,7 +378,7 @@ p, .pStats
     .card
     {
         width: 16%;
-        height: 31%;
+        height: 36%;
         margin: 0.25% 0.25% 0.25% 0.25%;
         display: inline-block;
         position: relative;
@@ -427,7 +454,7 @@ p, .pStats
         width: 70vw;
         height: 40vw;
         top: 30%;
-        left: 23%;
+        left: 15%;
         overflow: auto;
         border: 2px solid black;
         border-radius: 50px;
@@ -716,6 +743,33 @@ p, .pStats
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
+    aside
+    {
+        float: left; 
+        width: 100%;
+        height: 12vh;
+        margin-bottom: 1%; 
+    }
+
+    .details
+    {
+        position: relative;
+        top: -6.75vh;
+        left: 8vw;
+        background-image: url("./images/cutting\ borad.jpg");
+        display: inline-block;
+        height: 5vh;
+        width: 12vw;
+        text-align: center;
+        font-size: 2.5vw;
+        margin-bottom: 10%;
+        font-family: 'Overpass', sans-serif;
+        font-weight: bold;
+
+        vertical-align: middle; /* For text in the center of div */
+        line-height: 3vh; /* For text in the center of div (the same as your div height) */
+    }
+
     header
     {
         text-align: center;
@@ -731,7 +785,7 @@ and (orientation : portrait) {
     .pStats {
         color: yellow;
         text-shadow: 2px 4px blue;
-        margin-top: 10%;
+        margin-top: 0.5vh;
         margin-bottom: 10%;
     }
 
@@ -739,14 +793,14 @@ and (orientation : portrait) {
     {
         position: relative;
         /* display: flex; */
-        height: 41vh;
+        height: 60vh;
         width: 168vw;
         margin-left: 3%;
         padding-top: 1%;
     }
     main    
     {
-        width: 76vw;
+        width: 98vw;
         height: 45vh;
         display: flex;
         justify-content: space-around;
@@ -831,7 +885,7 @@ and (orientation : portrait) {
         width: 70vw;
         height: 40vw;
         top: 30%;
-        left: 23%;
+        left: 16%;
         overflow: auto;
         border: 2px solid black;
         border-radius: 50px;
