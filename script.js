@@ -1,4 +1,3 @@
-0123456789
 var backCard = $(".back_card");
 var firstCardClicked = null;
 var secondCardClicked = null;
