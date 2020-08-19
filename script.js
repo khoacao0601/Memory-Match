@@ -8,7 +8,7 @@ var games_played = null;
 var calculate = null;
 var name = null;
 
-
+012345
 function welcomeBox() //Modal Box for Welcome Box
     {
         var welcome = $(".welcome");
