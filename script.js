@@ -9,6 +9,7 @@ var calculate = null;
 var name = null;
 
 012345
+6789
 function welcomeBox() //Modal Box for Welcome Box
     {
         var welcome = $(".welcome");
