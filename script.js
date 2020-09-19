@@ -12,7 +12,7 @@ function welcomeBox() //Modal Box for Welcome Box
     {
         var welcome = $(".welcome");
         var submit = $(".submit");
-0123456789
+
         welcome.show();
 
         submit.click(function(){
