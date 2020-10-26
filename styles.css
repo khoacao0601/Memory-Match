@@ -195,7 +195,7 @@ p, .pStats
         opacity: 0.7;
         width: 37vw;
         height: 20vw;
-        z-index: -2;
+        z-index: -1;
         content: " ";
         background-repeat: no-repeat;
         background-position: center;
