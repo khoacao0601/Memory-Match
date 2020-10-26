@@ -113,7 +113,7 @@ p, .pStats
 .couple1_js,.couple2_html,.couple3_github,.couple4_mysql,.couple5_react,.couple6_php,.couple7_node,.couple8_css,.couple9_docker
     {
         height: 100%;
-        width: 100%;
+        width: 50%;
         background-size: cover;
         background-position: center;
     }
