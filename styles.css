@@ -86,7 +86,6 @@ p, .pStats
         margin-bottom: 5%;
         font-family: 'Overpass', sans-serif;
         font-weight: bold;
-
         vertical-align: middle; /* For text in the center of div */
         line-height: 9vh; /* For text in the center of div (the same as your div height) */
     }
