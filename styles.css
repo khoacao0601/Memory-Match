@@ -95,7 +95,7 @@ p, .pStats
     {
         background-image: url("./images/backcard.gif");
         height: 100%;
-        width: 50%;
+        width: 100%;
         background-size: cover;
         position: absolute;
         background-position: center;
